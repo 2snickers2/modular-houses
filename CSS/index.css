@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header {
+    width: 95%;
+    margin: 10px 40px;
+    position: absolute;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__img {
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__nav-btn {
+    border: none;
+    background-color: #819B57;
+    color: #fff;
+    padding: 7px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.header__nav-btn-language {
+    color: #819B57;
+    padding: 7px 10px;
+    background-color: #fff;
+}
+
+.section-main {
+    background-image: linear-gradient(84deg, rgba(29, 29, 29, 0.592) 2.03%, rgba(15, 15, 15, 0.18) 58.46%, rgba(18, 18, 17, 0) 90.36%),
+        url(../images/house_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 0 0 50px 50px;
+}
+
+.section-main::after {
+    content: '';
+    position: absolute;
+    background-color: #819B57;
+    inset: 0;
+    z-index: -1;
+}
+
+.section-main__text {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 50%;
+    left: 40px;
+    bottom: 30px;
+
+}
+
+.section-main__header {
+    color: #fff;
+    font-size: 78px;
+    font-weight: 700;
+}
+
+.section-main__span {
+    color: #819B57;
+}
+
+.section-square {
+    color: #fff;
+    width: 100%;
+    background-color: #819B57;
+    border-radius: 0 0 50px 50px;
+}
+
+.section-square__subtext {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.section-square__parameters {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
+    font-size: 48px;
+    padding: 20px 0;
+}
+
+.section-square__line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    color: #fff;
+    align-self: center;
+}
