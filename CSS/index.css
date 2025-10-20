@@ -482,7 +482,26 @@ font-size: 14px;
   border: 1px #475831a5 solid;
   transition: all 0.3s ease;
 }
+  .toggle {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
 
+    .toggle:hover {
+      background: #f0f0f0;
+    }
+
+    .toggle.active {
+      background: #88a86f;
+      color: white;
+      border-color: #88a86f;
+    }
 .select-selected::after {
   content: "";
   position: absolute;

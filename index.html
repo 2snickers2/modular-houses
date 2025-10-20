@@ -274,13 +274,13 @@
                                  <div class="contact-section__form-output"></div>
                         </div>
                         <div class="contact-section__form-field input">
-                            <label class="input__label visually-hidden" for="user-email">Номер телефона</label>
-                            <input class="input__control input__control-textarea" type="number " name="user-phone" id="user-phone" 
+                            <label class="input__label visually-hidden" for="user-phone">Номер телефона</label>
+                            <input class="input__control input__control-textarea" type="number" name="user-phone" id="user-phone" 
                                 placeholder="Номер телефона"></input>
                              <div class="contact-section__form-output"></div>
     
                         </div>
-                        <button class="contact-section__button navigation-button" type="button">Продовжити  &#8594</button>
+                        <button class="contact-section__button navigation-button" type="button" >Продовжити  &#8594</button>
                     </form>
                 </div>
                 <!-- <div class="contact-section__info">
@@ -312,48 +312,50 @@
         <div class="section-calculator__content"id="section-contact">
             <h3 class="section__content-title"> Розрахуйте вартість будинку</h3>
         <form action="calculator-form">
-            <div class="contact-section__form-field input">
-                <label class="input__label visually-hidden" for="user-email">Орієнтована площа будинку м<sup>2</sup></label>
-                <input class="input__control input__control-textarea" type="email" name="user-email" id="user-s"
+            <div class="contact-section__form-field input ">
+                <label class="input__label visually-hidden" for="area">Орієнтована площа будинку м<sup>2</sup></label>
+                <input class="input__control input__control-textarea" id="area" type="number" name="area" 
                     placeholder="Орієнтована площа будинку м²"></input>
             </div>
-            <div class="custom-select">
+            <div class="custom-select toggle-group">
                 <div class="select-selected">Фундамент</div>
-                <div class="select-items">
-                    <div>Так</div>
-                    <div>Ні</div>
+                <div class="select-items toggle-group " id="fundament">
+                    <div class="toggle">Так</div>
+                    <div class="toggle">Ні</div>
                 </div>
             </div>       
             <div class="custom-select">
-                <div class="select-selected">Коробка (стіни + дах)</div>
-                <div class="select-items">
-                    <div>Так</div>
-                    <div>Ні</div>
+                <div class="select-selected" >Коробка (стіни + дах)</div>
+                <div class="select-items toggle-group"id="box">
+                    <div class="toggle">Так</div>
+                    <div class="toggle">Ні</div>
                 </div>
             </div>
-            <div class="custom-select">
-                <div class="select-selected">Вікна двері</div>
-                <div class="select-items">
-                    <div>Так</div>
-                    <div>Ні</div>
+            <div class="custom-select ">
+                <div class="select-selected" >Вікна двері</div>
+                <div class="select-items toggle-group"id="windows">
+                    <div class="toggle">Так</div>
+                    <div class="toggle">Ні</div>
                 </div>
             </div>
-            <div class="custom-select">
-                <div class="select-selected">Інженерні мережі</div>
-                <div class="select-items">
-                    <div>Так</div>
-                    <div>Ні</div>
+            <div class="custom-select ">
+                <div class="select-selected" >Інженерні мережі</div>
+                <div class="select-items toggle-group"id="engineer">
+                    <div class="toggle">Так</div>
+                    <div class="toggle">Ні</div>
                 </div>
             </div>
-            <div class="custom-select">
-                <div class="select-selected">Внутрішні роботи</div>
-                <div class="select-items">
-                    <div>Так</div>
-                    <div>Ні</div>
+            <div class="custom-select ">
+                <div class="select-selected" >Внутрішні роботи</div>
+                <div class="select-items toggle-group"id="interior">
+                    <div class="toggle">Так</div>
+                    <div class="toggle">Ні</div>
                 </div>
             </div>
+            
         </form> 
-        <button class="section-calculator__button navigation-button " type="submit">Розрахувати</button>
+        <button class="section-calculator__button navigation-button " id="calcBtn" ype="submit">Розрахувати</button>
+         <div class="section-calculator__result" id="result"></div>
     </div>
    
     </section>
@@ -481,10 +483,23 @@
             </address>
         </div>
     </footer>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Q5FCU3mh8sF9wVQuJ",
+      });
+   })();
+</script>
     <script src="js/scrol.js"></script>
     <script src="js/input.js"></script>
     <script src="js/answer.js"></script>
     <script src="js/button.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>
