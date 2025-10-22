@@ -642,3 +642,133 @@ font-size: 14px;
     justify-content: left;
    margin: 0 auto;
 }
+
+
+
+
+/* Burger */
+
+.burger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Анімація відкриття */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* ===== Мобільна адаптація ===== */
+@media (max-width: 850px) {
+    .section{
+        margin: 0;
+    }
+    .section-title{
+        font-size: 36px;
+    }
+    .header{
+        margin: 0;
+    }
+  .header__nav-list  {
+    display: none;
+  }
+  .section-square__subtext, .section-square__parameters{
+    font-size: 20px;
+    padding: 5px 25px;
+  }
+  .section-about__inform{
+    flex-direction: column;
+    font-size: 16px;
+    gap: 20px;
+  }
+  .section-about__text{
+    padding: 10px;
+  }
+    .section-about__text-p{
+        padding: 15px 0 10px 0;
+    }
+  .section-about__img{
+    display: flex;
+    flex: revert-layer;
+    height: 300px;
+  }
+  .section-about__button{
+    font-size: 14px;
+    width: 100%;
+  }
+  .section-subtutitle{
+    font-size: 14px;
+  }
+  .section-stages{
+    padding: 10px;
+  }
+  .section-stages__content{
+    padding-top: 30px;
+    margin: 0;
+  }
+  .section-frame__subtutitle{
+    font-size: 14px;
+  }
+  .section-frame__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .section-frame__card{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .section-frame__card-text{
+    order: 1;
+    padding-left: 20px;
+  }
+  .section-frame__card-img{
+    border-radius: 20px;
+    width: 100%;
+  }
+  .section-frame__card-item{
+    font-size: 14px;
+  }
+  .section-projects__container{
+    margin: 0;
+  }
+
+
+
+
+.section-calculator__content{
+    width: 90%;
+}
+.contact-section__input{
+    width: 90%;
+}
+.section-questions__container{
+    padding: 10px;
+}
+  .footer__content{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -15,7 +15,12 @@
                 <img src="images/logo.png" alt="Logo" class="header__img" >
                 <p class="header__logo-text">Logo<br>Home</p>
             </div>
-            <nav class="header__nav">
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="header__nav" id="header__nav">
                 <ul class="header__nav-list">
                     <li><a href="#section-about" class="scroll-link">Про нас</a></li>
                     <li><a href="#section-stages" class="scroll-link">Етапи роботи</a>
@@ -34,7 +39,7 @@
 
     <main>
         <section class="section-main">
-            <!-- <img src="images/main.png" alt="background" class="background-img"> -->
+
             <div class="section-main__text">
                 <h1 class="section-main__header">
                     Будуйте своє <span class="section-main__span">майбутнє — швидко.</span>
@@ -60,6 +65,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laboriosam excepturi quam, quaerat quod pariatur totam dolorem aliquid porro adipisci sequi sunt incidunt non quis consequatur corporis in iste nihil.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusamus, tempora ipsa blanditiis nesciunt quis beatae temporibus sint quibusdam eveniet eaque autem earum aliquam natus veniam culpa quam magnam amet!
                     </p>
+                    
                     <button class="section-about__button"><a href="">Консультація &#8594</a></button>
                 </div>
                 <img class="section-about__img">
@@ -387,7 +393,7 @@
                         </svg></div>
                 </div>
                 <div class="section-questions__answer">
-                    Будівництво модульного будинку зазвичай займає від 1 до 3 місяців, залежно від розміру та комплектації.
+                    Для модульних будинків використовують різні матеріали, але основною є металева або дерев'яна каркасна основа. Для стін часто застосовують СІП-панелі або сендвіч-панелі з пінополістиролу чи іншого утеплювача.
                 </div>
             </div>
             <div class="section-questions__item">
@@ -401,7 +407,7 @@
                         </svg></div>
                 </div>
                 <div class="section-questions__answer">
-                    Будівництво модульного будинку зазвичай займає від 1 до 3 місяців, залежно від розміру та комплектації.
+                    Так, планування модульних будинків можна змінювати як на етапі проєктування, так і після будівництва. До будівництва можна замовити індивідуальне планування, а після завершення — проводити внутрішній ремонт.
                 </div>
             </div>
             <div class="section-questions__item">
@@ -415,7 +421,7 @@
                         </svg></div>
                 </div>
                 <div class="section-questions__answer">
-                    Будівництво модульного будинку зазвичай займає від 1 до 3 місяців, залежно від розміру та комплектації.
+                   Так, модульні будинки можна безпечно експлуатувати взимку, якщо вони якісно утеплені та мають надійну систему опалення.
                 </div>
             </div>
             <div class="section-questions__item">
@@ -429,7 +435,7 @@
                         </svg></div>
                 </div>
                 <div class="section-questions__answer">
-                    Будівництво модульного будинку зазвичай займає від 1 до 3 місяців, залежно від розміру та комплектації.
+                    Вартість модульних будинків залежить від площі, складності проєкту, обраних матеріалів (як для конструкції, так і для оздоблення), рівня утеплення, а також комплектації та інженерних систем (вода, опалення, електрика тощо). Додаткові опції, як-от сантехніка, кондиціонування чи ландшафтний дизайн, також збільшують кінцеву ціну. 
                 </div>
             </div>
             <div class="section-questions__item">
@@ -482,24 +488,25 @@
             </ul>
             </address>
         </div>
-    </footer>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "Q5FCU3mh8sF9wVQuJ",
-      });
-   })();
-</script>
+        </footer>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "Q5FCU3mh8sF9wVQuJ",
+                });
+            })();
+        </script> 
+    <script src="js/menu.js"></script>
     <script src="js/scrol.js"></script>
     <script src="js/input.js"></script>
     <script src="js/answer.js"></script>
     <script src="js/button.js"></script>
     <script src="js/calculator.js"></script>
     <script src="js/email.js"></script>
+   
 </body>
 
 </html>

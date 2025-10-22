@@ -27,7 +27,7 @@ document.getElementById("calcBtn").addEventListener("click", function() {
   let windows = getSelectedValue('windows');
   let engineer = getSelectedValue('engineer');
   let interior = getSelectedValue('interior');
-let result = document.getElementById('result').textContent.trim();
+  let result = document.getElementById('result').textContent.trim();
 
 
   let params = {
@@ -43,13 +43,5 @@ let result = document.getElementById('result').textContent.trim();
     result: result
   };
 
-  emailjs.send("service_40h17pf","template_48r4afi", params)
-  .then(function(res) {
-    alert('✅ Супер! Дані відправлено. Статус: ' + res.status);
 
-
-  })
-  .catch(function(err) {
-    alert('❌ Помилка: ' + JSON.stringify(err));
-  });
 });
