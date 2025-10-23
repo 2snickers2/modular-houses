@@ -42,6 +42,8 @@ document.getElementById("calcBtn").addEventListener("click", function() {
     interior: interior,
     result: result
   };
-
+  emailjs.send("service_40h17pf","template_48r4afi", params)
+      .then(() => console.log("Дані успішно відправлено!"))
+      .catch(err => console.error("Помилка при відправленні:", err));
 
 });

@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Модульні будинки</title>  
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Модульні будинки</title>
 </head>
 
 <body>
@@ -15,11 +20,11 @@
                 <img src="images/logo.png" alt="Logo" class="header__img" >
                 <p class="header__logo-text">Logo<br>Home</p>
             </div>
-            <div class="burger" id="burger">
+            <!-- <div class="burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
             <nav class="header__nav" id="header__nav">
                 <ul class="header__nav-list">
                     <li><a href="#section-about" class="scroll-link">Про нас</a></li>
@@ -165,10 +170,12 @@
             </div>
         </section>
         <section class="section-projects " id="section-projects">
-            <div class="section-projects__container">
-            <h2 class="section-title">Наші проєкти</h2>
-            <div class="section-projects__content">
-            <div class="section-project__card">
+            
+           
+            <div class="section-projects__container swiper"> 
+                <h2 class="section-title">Наші проєкти</h2>
+            <div class=" section-projects__content swiper-wrapper">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house1.png" alt="">
                 <h3 class="section-project__card-title">House 1</h3>
                 <ul class="section-project__card-list">
@@ -183,7 +190,7 @@
                     <p>36 900</p>
                 </div>
             </div>            
-            <div class="section-project__card">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house2.jpeg" alt="">
                 <h3 class="section-project__card-title">House 2</h3>
                 <ul class="section-project__card-list">
@@ -197,7 +204,7 @@
                     <p>49 500</p>
                 </div>
             </div>
-            <div class="section-project__card">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house3.png" alt="">
                 <h3 class="section-project__card-title">House 3</h3>
                 <ul class="section-project__card-list">
@@ -213,7 +220,7 @@
                 </div>
             </div>
 
-            <div class="section-project__card">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house4.jpeg" alt="">
                 <h3 class="section-project__card-title">House 4</h3>
                 <ul class="section-project__card-list">
@@ -228,7 +235,7 @@
                     <p>19 800</p>
                 </div>
             </div>
-            <div class="section-project__card">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house5.png" alt="">
                 <h3 class="section-project__card-title">House 5</h3>
                 <ul class="section-project__card-list">
@@ -243,7 +250,7 @@
                     <p>25 110</p>
                 </div>
             </div>
-            <div class="section-project__card">
+            <div class="swiper-slide section-project__card ">
                 <img class="section-project__card-img" src="images/house6.png" alt="">
                 <h3 class="section-project__card-title">House 6</h3>
                 <ul class="section-project__card-list">
@@ -258,7 +265,10 @@
                     <p>45 450</p>
                 </div>
             </div>
-        </div></div>
+           
+        </div> 
+        <div class="swiper-pagination"></div>
+    </div>
         </section>
         <section class="section-contact section"  id="step1" >
             <div class="contact-section__container"id="section-contact">
@@ -490,7 +500,7 @@
         </div>
         </footer>
         
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        
         </script>
         <script type="text/javascript">
             (function () {
@@ -499,13 +509,14 @@
                 });
             })();
         </script> 
-    <script src="js/menu.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
     <script src="js/scrol.js"></script>
     <script src="js/input.js"></script>
     <script src="js/answer.js"></script>
     <script src="js/button.js"></script>
     <script src="js/calculator.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/swiper.js"></script>
    
 </body>
 
