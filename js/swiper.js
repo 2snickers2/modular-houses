@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let swiper; // переменная для хранения экземпляра
-  const breakpoint = 850; // ширина экрана, при которой включается слайдер
+  let swiper; 
+  const breakpoint = 850; 
   const swiperContainer = document.querySelector(".swiper");
 
   function initSwiper() {
@@ -21,18 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkWindowSize() {
     if (window.innerWidth <= breakpoint) {
-      if (!swiper) initSwiper(); // если Swiper ещё не создан — создаем
+      if (!swiper) initSwiper(); 
     } else {
       if (swiper) {
-        swiper.destroy(true, true); // удаляем слайдер
+        swiper.destroy(true, true);
         swiper = undefined;
       }
     }
   }
 
-  // Проверяем при загрузке страницы
   checkWindowSize();
 
-  // Проверяем при изменении размера окна
   window.addEventListener("resize", checkWindowSize);
 });
