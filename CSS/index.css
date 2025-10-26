@@ -173,12 +173,9 @@ a:visited {
     height: 100vh;
     width: 60%;
     padding: 0 0 40px 30px;
-    /* left: 40px;
-    bottom: 30px; */
-
-opacity: 0; /* изначально скрыт */
-    transform: translateY(30px); /* смещаем вниз */
-    animation: fadeInUp 1.5s ease forwards; /* анимация */
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInUp 1.5s ease forwards; 
 }
 
 @keyframes fadeInUp {
