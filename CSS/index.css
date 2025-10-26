@@ -993,6 +993,7 @@ font-size: 14px;
   .footer-media__icon{
     width: 15px;
     font-size: 14px;
+    padding-right: 0;
    
   }
   .footer__logo-text{
