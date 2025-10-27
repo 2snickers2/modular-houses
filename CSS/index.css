@@ -606,6 +606,11 @@ font-size: 14px;
     border-radius: 10px;
     
 }
+.ontact-section__container{
+    background: #95b46a;
+    padding: 30px 0;
+    border-radius: 10px;
+}
 .navigation-button {
     margin: 50px auto;
 }

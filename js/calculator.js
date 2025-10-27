@@ -67,8 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const grandTotal = Math.round(totalBase + total);
     
    resultDiv.innerHTML = `
+    <div class="ontact-section__container">
       <p><b>Загальна вартість: ${grandTotal.toLocaleString("uk-UA", { maximumFractionDigits: 2 })}</b></p>
-      `;
+      
+      </div>`;
   });
 });
     //  <p>Базова вартість будинку: <b>${Math.round(totalBase).toLocaleString("uk-UA")}$</b></p>
