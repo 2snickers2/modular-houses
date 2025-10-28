@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Модульні будинки</title>  
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="../images/logo.png" alt="Logo" class="header__img" >
+                <p class="header__logo-text">Logo<br>Home</p>
+            </div>
+             <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+            <nav class="header__nav" id="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#section-about" class="scroll-link">About Us</a></li>
+                    <li class="has-dropdown"><a href="#section-stages" class="scroll-link dropdown-toggle" >Stages of Work</a>
+                        <ul class="header__nav-drop">
+                            <li><a href="#section-frame" class="scroll-link">Frame</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#section-projects" class="scroll-link">Projects</a></li>
+                    <li><a href="#section-contact" class="scroll-link">Contacts</a></li>
+                    <li><button class="header__nav-btn header__nav-btn-language"id="lang-main">EN</button>
+                        <ul class="header__nav-drop header__nav-drop-language ">
+                            <li><button class="header__nav-btn header__nav-btn-language" data-lang="ua">UA</button></li>
+                        </ul>
+                    </li>
+                    <li><a href="#step1" class="scroll-link"><button class="header__nav-btn ">Calculate</button></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-main">
+
+            <div class="section-main__text">
+                <h1 class="section-main__header">
+                    Build your future fast — <span class="section-main__span">with modular home frames.</span>
+
+                </h1>
+            </div>
+        </section>
+        <section class="section-square">
+            <h2 class="section-square__subtext">Standard Projects</h2>
+            <div class="section-square__parameters">
+                <p>24м<sup>2</sup></p>
+                <hr class="section-square__line">
+                <p>160м<sup>2</sup></p>
+            </div>
+        </section>
+        <section class="section-about section" id="section-about">
+            <div class="section-about__inform">
+                <div class="section-about__text">
+                    <h2 class="section-title section-title__black">About Us</h2>
+                    <p class="section-about__text-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cum eveniet temporibus repellat quos dolor voluptatem cupiditate dolore quibusdam laboriosam! Voluptatem nihil et quod porro! Neque nesciunt dolores ipsum impedit!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima fuga illum sed incidunt vel officiis, repudiandae voluptates qui consequuntur blanditiis, sunt sit iusto, aperiam veniam rem? At, reiciendis labore!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laboriosam excepturi quam, quaerat quod pariatur totam dolorem aliquid porro adipisci sequi sunt incidunt non quis consequatur corporis in iste nihil.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusamus, tempora ipsa blanditiis nesciunt quis beatae temporibus sint quibusdam eveniet eaque autem earum aliquam natus veniam culpa quam magnam amet!
+                    </p>
+                    
+                    <button class="section-about__button " ><a class="scroll-link" href="#step1">Consultation &#8594</a></button>
+                </div>
+                <img class="section-about__img">
+                <button class="section-about__button button-mob" ><a class="scroll-link" href="#step1">Consultation &#8594</a></button>
+            </div>
+            
+        </section>
+        <section class="section-stages section" id="section-stages">
+            <h2 class="section-title">Stages of Work</h2>
+            <p class="section-subtutitle">
+                A block module is the main structural unit of a modular building, representing a ready-to-install construction element. Block modules are manufactured in a factory in compliance with all building codes and standards, ensuring their quality and durability.
+            </p>
+            <div class="section-stages__content">
+                <div class="section-stages__card">
+                    <img class="section-stages__card-icon" src="../images/icons8-home-80.png" alt="">
+                    <h3 class="section-stages__card-title">Block Module Structure</h3>
+                    <p class="section-stages__card-subtitle">Frame, Walls, Roof, Floor</p>
+                </div>
+                <div class="section-stages__card">
+                    <img class="section-stages__card-icon" src="../images/icons8-wall-socket-80.png" alt="">
+                   
+                    <h3 class="section-stages__card-title">ОBlock Module Features</h3>
+                    <p class="section-stages__card-subtitle">ngineering Systems, Interior Finishing</p>
+                </div>
+                <div class="section-stages__card">
+                    <img class="section-stages__card-icon" src="../images/icons8-cv-80.png" alt="">
+                    
+                    <h3 class="section-stages__card-title">Preparatory Stage</h3>
+                    <p class="section-stages__card-subtitle">Frame, Walls, Roof, Floor. Design and Permitting Documentation</p>
+                </div>
+                <div class="section-stages__card">
+                    <img class="section-stages__card-icon"  src="../images/icons8-firewood-80.png" alt="">
+                    <h3 class="section-stages__card-title">Production Stage</h3>
+                    <p class="section-stages__card-subtitle">Module Production, Interior and Exterior Finishing</p>
+                </div>
+                <div class="section-stages__card">
+                    <img class="section-stages__card-icon" src="../images/icons8-tools-80.png" alt="">
+                    
+                    <h3 class="section-stages__card-title">Transportation and Installation</h3>
+                    <p class="section-stages__card-subtitle">Module Transportation, On-Site Assembly, Connection of Engineering Systems</p>
+                </div>
+                <div class="section-stages__card">
+                    <img  class="section-stages__card-icon" src="../images/icons8-done-80.png" alt="">
+                    
+                    <h3 class="section-stages__card-title">Final Stage</h3>
+                    <p class="section-stages__card-subtitle">Finishing Works, Commissioning, Handover</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-frame section" id="section-frame">
+            <h2 class="section-title">Frame</h2>
+            <p class="section-frame__subtutitle">We manufacture reliable metal and wooden frames for modular houses, ensuring the strength and durability of the structure.</p>
+            <div class="section-frame__content">
+                <div class="section-frame__card">
+                    <img class="section-frame__card-img" src="../images/модул дерев констр1 1.png" alt="">
+                    <div class="section-frame__card-text">
+                        <img src="../images/icons8-leaves-30.png" alt="">
+                        <h4 class="section-frame__card-title">Wooden Frame</h4>
+                    </div>
+                    <ul class="section-frame__card-list">
+                        <li class="section-frame__card-item">Lightweight and Eco-Friendly</li>
+                        <li class="section-frame__card-item">Energy-Efficient</li>
+                        <li class="section-frame__card-item">Suitable for Fast Construction</li>
+                        <li class="section-frame__card-item">A Reliable Foundation for Modular Houses</li>
+                    </ul>
+                </div>
+                 <div class="section-frame__card">
+                    <img class="section-frame__card-img" src="../images/модул желез констр1 1.png" alt="">
+                    <div class="section-frame__card-text">
+                        <img src="../images/icons8-settings-30.png" alt="">
+                        <h4 class="section-frame__card-title">Metal Frames</h4>
+                    </div>
+                    <ul class="section-frame__card-list">
+                        <li class="section-frame__card-item">High Strength and Durability</li>
+                        <li class="section-frame__card-item">Fire Resistance</li>
+                        <li class="section-frame__card-item">Structural Stability</li>
+                        <li class="section-frame__card-item">LSTC Technology for Modern Home Designs</li>
+                    </ul>
+                </div>
+                 <div class="section-frame__card">
+                    <img class="section-frame__card-img" src="../images/сип панель 1.png" alt="">
+                    <div class="section-frame__card-text">
+                        <img src="../images/icons8-shield-30.png" alt="">
+                        <h4 class="section-frame__card-title">SIP Panels </h4>
+                    </div>
+                    <ul class="section-frame__card-list">
+                        <li class="section-frame__card-item">Quick Installation</li>
+                        <li class="section-frame__card-item">High Thermal Insulation</li>
+                        <li class="section-frame__card-item">Lightweight Structure</li>
+                        <li class="section-frame__card-item">The Ideal Solution for Modular Houses</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section-projects " id="section-projects">
+            <div class="section-projects__container swiper">
+                <h2 class="section-title">Projects</h2>
+            <div class=" section-projects__content swiper-wrapper">
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house1.JPG" alt="">
+                <h3 class="section-project__card-title">House 1</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 82</li>
+                    <li>Dimensions, M: 6,2x7</li>
+                    <li>Floors: 2</li>
+                    <li>Rooms: 4</li>
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD</p>
+                    <p>36 900</p>
+                </div>
+            </div>            
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house2.jpeg" alt="">
+                <h3 class="section-project__card-title">House 2</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 110</li>
+                    <li>Dimensions, M: 8,1x8,5</li>
+                    <li>Floors: 2</li>
+                    <li>Rooms: 3</li>
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD</p>
+                    <p>49 500</p>
+                </div>
+            </div>
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house3.png" alt="">
+                <h3 class="section-project__card-title">House 3</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 66</li>
+                    <li>Dimensions, M: 8X6</li>
+                    <li>Floors: 1</li>
+                    <li>Rooms: 2</li>
+                    <li>Terrace, М<sup>2</sup>: 18</li>
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD </p>
+                    <p>29 700</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house4.jpeg" alt="">
+                <h3 class="section-project__card-title">House 4</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 44</li>
+                    <li>Dimensions, M: 6X6</li>
+                    <li>Floors: 1</li>
+                    <li>Rooms: 2</li>
+  
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD</p>
+                    <p>19 800</p>
+                </div>
+            </div>
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house5.png" alt="">
+                <h3 class="section-project__card-title">House 5</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 55,8</li>
+                    <li>Dimensions, M: 6,2X9</li>
+                    <li>Floors: 1</li>
+                    <li>Rooms: 2</li>
+                    <li>Terrace, М<sup>2</sup>: 28</li>
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD </p>
+                    <p>25 110</p>
+                </div>
+            </div>
+            <div class="swiper-slide section-project__card ">
+                <img class="section-project__card-img" src="../images/house6.png" alt="">
+                <h3 class="section-project__card-title">House 6</h3>
+                <ul class="section-project__card-list">
+                    <li>Area, M<sup>2</sup>: 101</li>
+                    <li>Dimensions, M: 11,4X8,6</li>
+                    <li>Floors: 1</li>
+                    <li>Rooms: 3</li>
+                    <li>Terrace, М<sup>2</sup>: 3</li>
+                </ul>
+                <div class="section-project__card-price">
+                    <p>Price from, USD </p>
+                    <p>45 450</p>
+                </div>
+            </div>
+           
+        </div> 
+        <p>*- Price for the basic configuration</p>
+        <div class="swiper-pagination"></div>
+    </div>
+        </section>
+        <section class="section-contact section"  id="step1" >
+            <div class="contact-section__container" id="contact-section__container">
+                <div class="contact-section__form">
+                    <h2 class="section-title ">Calculator</h2>
+                   
+                    <form name="contact-form "class="contact-section__input" autocomplete="off" novalidate>
+                         <h3 class="section__content-title">Fill out the form and calculate the cost</h3>
+                        <div class="contact-section__form-field input">
+                            <label class="input__label visually-hidden" for="user-name">Ім'я</label>
+                            <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Name"
+                                required>
+                            <div class="contact-section__form-output"></div>
+                        </div>
+                        <div class="contact-section__form-field input">
+                            <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
+                            <input class="input__control" type="email" name="user-email" id="user-email"
+                                placeholder="Email" required>
+                                 <div class="contact-section__form-output"></div>
+                        </div>
+                        <div class="contact-section__form-field input">
+                            <label class="input__label visually-hidden" for="user-phone">Номер телефона</label>
+                            <input class="input__control input__control-textarea" type="number" name="user-phone" id="user-phone" 
+                                placeholder="Number"></input>
+                             <div class="contact-section__form-output"></div>
+    
+                        </div>
+                        <button class="contact-section__button navigation-button" type="button" >Continue  &#8594</button>
+                    </form>
+                </div>
+                
+        </div>
+    </section>
+    <section class="section-calculator section-calculator__hidden section"  id="step2">
+        <!-- <h2 class="section-title">Калькулятор</h2> -->
+        <div class="section-calculator__content" id="section-calculator">
+            <h3 class="section__content-title"> Calculate the Cost of the House</h3>
+        <form action="calculator-form">
+            <div class="contact-section__form-field input ">
+                <label class="input__label visually-hidden" for="area">Approximate House Area м<sup>2</sup></label>
+                <input class="input__control input__control-textarea" id="area" type="number" name="area" 
+                    placeholder="Approximate House Area м²"></input>
+            </div>
+            <div class="custom-select toggle-group">
+                <div class="select-selected">Fundament</div>
+                <div class="select-items toggle-group " id="fundament">
+                    <div class="toggle">Yes</div>
+                    <div class="toggle">No</div>
+                </div>
+            </div>       
+            <div class="custom-select">
+                <div class="select-selected" >Shell (Walls + Roof)</div>
+                <div class="select-items toggle-group"id="box">
+                    <div class="toggle">Yes</div>
+                    <div class="toggle">No</div>
+                </div>
+            </div>
+            <div class="custom-select ">
+                <div class="select-selected" >Windows and Doors</div>
+                <div class="select-items toggle-group"id="windows">
+                    <div class="toggle">Yes</div>
+                    <div class="toggle">No</div>
+                </div>
+            </div>
+            <div class="custom-select ">
+                <div class="select-selected" >Building Systems</div>
+                <div class="select-items toggle-group"id="engineer">
+                    <div class="toggle">Yes</div>
+                    <div class="toggle">No</div>
+                </div>
+            </div>
+            <div class="custom-select ">
+                <div class="select-selected" >Interior Works</div>
+                <div class="select-items toggle-group"id="interior">
+                    <div class="toggle">Yes</div>
+                    <div class="toggle">No</div>
+                </div>
+            </div>
+            
+        </form> 
+        <button class="section-calculator__button navigation-button " id="calcBtn" ype="submit">Calculate</button>
+         <div class="section-calculator__result" id="result"></div>
+    </div>
+   
+    </section>
+    <section class="section-inform section" >
+        <h2 class="section-title">Contacts</h2>
+        <div class="contact-section__info" id="section-contact">
+            <div class="section-inform__media">
+                    <ul class="section-inform__info-list">
+                        <li class="contact-section__info-item">
+                        <img class="section-inform__info" src="../images/icons8-address-30.png">
+                            <span>Ukraine, Kyiv, 4 Andriya Verkholyada St., Suite 122</span>
+                        </li>
+                        <li class="section-inform__info-item">
+                            <img class="section-inform__info" src="../images/icons8-email-30.png">
+                            <a class="section-inform__info-link" href="mailto:tovolsem@gmail.com">tovolsem@gmail.com</a>
+                        </li>
+                        <li class="section-inform__info-item">
+                        <img class="section-inform__info" src="../images/icons8-phone-30.png">
+                            <a class="section-inform__info-link" href="tel:+380660297188">+38(066) 029 71 88</a>
+                        </li>
+                    </ul>
+                      <div class="section-inform__links">
+                        <a href="" class="section-inform__link"><img class="section-inform__info" src="../images/icons8-telegram-30.png" alt="">telegram</a>
+                        <a href="" class="section-inform__link"><img class="section-inform__info" src="../images/icons8-instagram-30.png" alt="">instagram</a>
+                        <a href="" class="section-inform__link"><img class="section-inform__info" src="../images/icons8-facebook-30.png" alt="">facebook</a>
+                        <a href="" class="section-inform__link"><img class="section-inform__info" src="../images/icons8-tiktok-30.png" alt="">tiktok</a>
+                    </div>
+                </div>
+                <iframe class="section-inform__map"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2542.5455207744244!2d30.544034999999997!3d50.412307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDI0JzQ0LjMiTiAzMMKwMzInMzguNSJF!5e0!3m2!1suk!2sua!4v1743683317489!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+    
+                </iframe>
+            </div>
+    </section>
+    <section class="section-questions ">
+        <div class="section-questions__container">
+            <h2 class="section-title section-title__black">FAQ</h2>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>How long is the construction of a modular house?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+                   Building a modular house typically takes 1 to 3 months, depending on its size and specifications.
+                </div>
+            </div>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>Which materials are used in construction?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+                    Modular houses use a variety of materials, with the primary structure being a metal or wooden frame. Walls and floors are often made from OSB boards, SIP panels, or sandwich panels filled with polystyrene or other insulation materials.
+                </div>
+            </div>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>Can the layout be customized?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+                    Yes, modular house layouts can be customized both during the design stage and after construction. You can order a personalized layout before building, and make interior modifications after completion.
+                </div>
+            </div>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>Can you live in a modular house during winter?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+                   Yes, you can safely live in a modular house during winter, provided it is properly insulated and equipped with a reliable heating system.
+                </div>
+            </div>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>What factors affect the cost of a house?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+                    The price of a modular house depends on its size, project complexity, chosen materials (for both the structure and interior), insulation level, configuration, and engineering systems (water, heating, electricity, etc.). Optional features like plumbing, air conditioning, or landscaping can also raise the final cost.
+                </div>
+            </div>
+            <div class="section-questions__item">
+                <div class="section-questions__text">
+                    <p>What warranties or guarantees come with the house?</p>
+                    <div class="section-questions__btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="section-questions__answer">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+        <div class="footer-logo">
+            <img src="../images/logo.png" alt="Logo" class="footer-img" >
+            <p class="footer__logo-text">Logo<br>Home</p>
+        </div>
+        <div class="footer-media">
+            <a href="" class="footer-media__link"><img class="footer-media__icon" src="../images/icons8-telegram-30.png" alt="">telegram</a>
+            <a href="" class="footer-media__link"><img class="footer-media__icon" src="../images/icons8-instagram-30.png" alt="">instagram</a>
+            <a href="" class="footer-media__link"><img class="footer-media__icon" src="../images/icons8-facebook-30.png" alt="">facebook</a>
+            <a href="" class="footer-media__link"><img class="footer-media__icon" src="../images/icons8-tiktok-30.png" alt="">tiktok</a>
+        </div>
+        <address class="footer__address"> 
+            <ul class="footer__address-list">
+                <li>
+                    <a class="footer__address-link" href="#">Ukraine, Kyiv, 
+                        <br>
+                    4 Andriya Verkholyada St., Suite 122 </a>
+                        <br>
+                    <a class="footer__address-link" href="tel:+38(066)029 1 88 ">tel: +38(066) 029 71 88 </a>
+                </li>
+                <li>
+                    <a class="footer__address-link" href="#">Код ЄДРПОУ: 32830601</a>
+                </li>
+                <li>
+                    <a class="footer__address-link" href="mailto:tovolsem@gmail.com">@mail: tovolsem@gmail.com</a>
+            
+                </li>
+            
+            </ul>
+            </address>
+        </div>
+        </footer>
+        
+        
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "Q5FCU3mh8sF9wVQuJ",
+                });
+            })();
+        </script> 
+    <!-- <script src="js/menu.js"></script> -->
+    <script src="../js/scrol.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/input.js"></script>
+    <script src="../js/answer.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../js/calculator.js"></script>
+    <script src="../js/email.js"></script>
+    <script src="../js/swiper.js"></script>
+   <script src="../js/language.js"></script>
+</body>
+
+</html>
