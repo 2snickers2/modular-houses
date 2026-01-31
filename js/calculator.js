@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const langMainBtn = document.getElementById("lang-main");
   const langButtons = document.querySelectorAll("[data-lang]");
 
-  // поточна мова (за замовчуванням EN)
   let currentLang = langMainBtn.dataset.lang || "en";
 
   const prices = {
