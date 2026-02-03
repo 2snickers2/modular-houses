@@ -12,14 +12,16 @@ button {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
-
 }
 
 a,
 a:visited {
     color: #fff;
     text-decoration: none;
+}
+
+.lock {
+    overflow: hidden;
 }
 
 .header {
@@ -60,8 +62,6 @@ a:visited {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    transition: color 0.3s ease;
-
 }
 
 .header__nav {
@@ -70,6 +70,7 @@ a:visited {
 
 .header__nav-list a:hover {
     color: #95b46a;
+    transition: color 0.3s ease;
 }
 
 .header__nav-btn {
@@ -208,6 +209,7 @@ a:visited {
     width: 100%;
     background-color: #819B57;
     border-radius: 0 0 50px 50px;
+    padding-top: 10px;
 }
 
 .section-square__subtext {
@@ -300,22 +302,20 @@ a:visited {
     padding-top: 20px;
 }
 
-/* .section-stages {
-    height: 100vh;
-} */
 .section-stages__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     column-gap: 115px;
     row-gap: 50px;
-
+    max-width: 1110px;
 }
 
 .section-stages__card {
     padding-top: 5px;
     color: #292929;
-    /* width: 100%; */
     border-top: 2px solid #95b46a;
 }
 
@@ -332,29 +332,33 @@ a:visited {
     padding-top: 10px;
 }
 
-/* .section-frame{
-    height: 100vh;
-} */
 .section-frame__subtutitle {
-    font-size: 2vw;
+    font-size: 1.4vw;
+    margin-top: 20px;
 }
 
 .section-frame__content {
     margin-top: 60px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     place-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
 .section-frame__card {
-    position: relative;
-    padding: 0 30px;
+    background-color: #E8E6E6;
+    border-radius: 20px;
 }
 
 .section-frame__card-img {
-    border-radius: 20px 0 20px 0;
-    width: 350px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: auto;
+    max-height: 60%;
+    object-fit: cover;
 }
 
 .section-frame__card-text {
@@ -364,13 +368,16 @@ a:visited {
     color: #95b46a;
     text-align: center;
     align-items: center;
+    gap: 5px;
+    margin: 10px;
 }
 
 .section-frame__card-list {
     list-style-type: none;
     padding: 0;
     line-height: 1.7;
-
+    margin: 10px;
+    margin-top: 0;
 }
 
 .section-frame__card-item {
@@ -387,7 +394,7 @@ a:visited {
     font-weight: 500;
 }
 
-.section-frame__card:not(:last-child)::after {
+/* .section-frame__card:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 230px;
@@ -397,7 +404,7 @@ a:visited {
     background-color: #95b46a;
     height: calc(100% - 200px);
     margin: auto 0;
-}
+} */
 
 .section-projects {
     background-color: #E8E6E6;
@@ -463,14 +470,16 @@ a:visited {
 .section-project__card-price {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     margin-top: auto;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.contact-section__container {
-    display: flex;
-    gap: 30px;
-
+.section-project__card-price p:last-child {
+    color: #95b46a;
+    font-size: 24px;
+    font-weight: 550;
 }
 
 .section-contact {
@@ -486,7 +495,10 @@ a:visited {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
 
+.contact-section__form h2 {
+    text-align: center;
 }
 
 .contact-section__input {
@@ -532,12 +544,11 @@ a:visited {
 }
 
 .section-calculator__content {
-    width: 60%;
+    width: 50%;
     padding-top: 50px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px #95b46a solid;
 }
 
 .section-calculator__hidden {
@@ -665,6 +676,9 @@ a:visited {
     background: #95b46a;
     padding: 30px 0;
     border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
 }
 
 .contact-section__input-circles {
@@ -716,6 +730,10 @@ a:visited {
 
 .section-inform__media {
     padding: 20px 0;
+}
+
+.section-inform h2 {
+    text-align: center;
 }
 
 .contact-section__info {
@@ -827,6 +845,7 @@ a:visited {
     color: #ffffff;
     font-size: 22px;
     margin: 0 auto;
+    gap: 5px;
 }
 
 .footer-img {
@@ -891,12 +910,10 @@ a:visited {
 @media (max-width: 950px) {
     .section {
         margin: 30px 60px;
-
     }
 }
 
 @media (max-width: 850px) {
-
     .section,
     .section-projects__container {
         margin: 30px 10px;
@@ -1041,26 +1058,17 @@ a:visited {
 
     .section-frame__card {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 30px;
         padding: 0;
-        border-top: 2px solid #95b46a;
-
     }
 
     .section-frame__card:first-child {
         border-top: none;
     }
 
-    .section-frame__card-text {
-        order: 1;
-        padding-top: 15px;
-    }
-
     .section-frame__card-img {
-        border-radius: 20px;
-        width: 99%;
-        margin: 0 auto;
+        border-radius: 20px 20px 0 0;
     }
 
     .section-frame__card-item {
@@ -1073,6 +1081,7 @@ a:visited {
 
     .section-projects {
         margin-top: 30px;
+        padding: 20px 10px;
     }
 
     .section-projects__content {
@@ -1123,8 +1132,12 @@ a:visited {
         width: 90%;
     }
 
+    .input__circle, .input__line {
+        display: none;
+    }
+
     .section-questions__container {
-        padding: 10px;
+        padding: 30px 10px;
         margin-top: 50px;
     }
 

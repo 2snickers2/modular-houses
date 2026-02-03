@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const langMainBtn = document.getElementById("lang-main");
   const langButtons = document.querySelectorAll("[data-lang]");
 
-  let currentLang = langMainBtn.dataset.lang || "en";
+  let currentLang = langMainBtn.dataset.lang || "ua";
 
   const prices = {
     fundament: 18,
@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const names = {
     ua: {
       total: "Загальна вартість",
-      error: "⚠️ Введіть правильну площу!",
+      previous: "Заповніть всі поля для отримання розрахунку",
+      error: "Введіть правильну площу!",
       fundament: "Фундамент",
       box: "Стіни та дах",
       windows: "Вікна та двері",
@@ -37,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     en: {
       total: "Total cost",
-      error: "⚠️ Enter a valid area!",
+      previous: "Fill in all fields to get a quote",
+      error: "Enter a valid area!",
       fundament: "Foundation",
       box: "Walls and roof",
       windows: "Windows and doors",
@@ -95,10 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showResult(grandTotal) {
     const totalText = names[currentLang].total;
-    resultDiv.innerHTML = `
-      <div class="contact-section__container">
-        <p><b>${totalText}: ${grandTotal.toLocaleString(currentLang === "ua" ? "uk-UA" : "en-US", { maximumFractionDigits: 2 })}$</b></p>
-      </div>`;
+    resultDiv.innerHTML = 
+      `<p>${totalText}: <b>${grandTotal.toLocaleString(currentLang === "ua" ? "uk-UA" : "en-US", { maximumFractionDigits: 2 })}$</b></p>`;
   }
 
   function updateResultLanguage() {
