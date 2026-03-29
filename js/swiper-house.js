@@ -1,30 +1,30 @@
 const galleries = {
     house1: [
-        "../../images/будинок1.png",
-        "../../images/планування будинок 1.1.jpg",
+        "../images/будинок1.png",
+        "../images/планування будинок 1.1.jpg",
         ".././images/планування будинок 1.2.jpg"
     ],
     house2: [
-        "../../images/будинок 2.jpg",
-        "../../images/план будинку 2.jpeg"
+        "../images/будинок 2.jpg",
+        "../images/план будинку 2.jpeg"
     ],
     house3: [
-        "../../images/будинок3.jpg",
-        "../../images/план будинку 3.jpg"
+        "../images/будинок3.jpg",
+        "../images/план будинку 3.jpg"
     ],
     house4: [
-        "../../images/будинок4.jpg",
-        "../../images/план будинку 4.jpg"
+        "../images/будинок4.jpg",
+        "../images/план будинку 4.jpg"
     ],
     house5: [
-        "../../images/будинок5.jpg",
-        "../../images/будинок5.2.jpg",
-        "../../images/будинок5.3.jpg",
-        "../../images/план будинок5.png"
+        "../images/будинок5.jpg",
+        "../images/будинок5.2.jpg",
+        "../images/будинок5.3.jpg",
+        "../images/план будинок5.png"
     ],
     house6: [
-        "../../images/house6.png",
-        "../../images/план будинку 6.jpg"
+        "../images/house6.png",
+        "../images/план будинку 6.jpg"
     ]
 };
 
