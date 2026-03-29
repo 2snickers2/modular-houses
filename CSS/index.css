@@ -457,6 +457,11 @@ a:visited {
   width: 100%;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #819b57;
+}
+
 .section-projects__content {
   margin: 0 auto;
   display: grid;
