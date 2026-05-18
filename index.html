@@ -41,7 +41,7 @@
                             <li><button class="header__nav-btn header__nav-btn-language" data-lang="en">EN</button></li>
                         </ul>
                     </li>
-                    <li><a href="#step1" class="scroll-link"><button class="header__nav-btn ">Розрахувати</button></a>
+                    <li><a href="#step1" class="scroll-link"><button class="header__nav-btn header__nav-calculate">Розрахувати</button></a>
                     </li>
                 </ul>
             </nav>
@@ -62,7 +62,10 @@
                     Будуйте своє майбутнє — швидко.
                     Каркаси модульних будинків.
                 </h1>
+
+                <a href="#step1" class="scroll-link"><button class="header__nav-btn header__nav-calculate-mobile">Розрахувати</button></a>
             </div>
+            
         </section>
         <section class="section-square">
             <h2 class="section-square__subtext">Типові проєкти</h2>
@@ -398,36 +401,36 @@
                     <div class="custom-select toggle-group">
                         <div class="select-selected">Фундамент</div>
                         <div class="select-items toggle-group " id="fundament">
-                            <div class="toggle">Так</div>
-                            <div class="toggle">Ні</div>
+                            <div class="toggle" data-value="yes">Так</div>
+                            <div class="toggle" data-value="no">Ні</div>
                         </div>
                     </div>
                     <div class="custom-select">
                         <div class="select-selected">Коробка (стіни + дах)</div>
                         <div class="select-items toggle-group" id="box">
-                            <div class="toggle">Так</div>
-                            <div class="toggle">Ні</div>
+                            <div class="toggle" data-value="yes">Так</div>
+                            <div class="toggle" data-value="no">Ні</div>
                         </div>
                     </div>
                     <div class="custom-select ">
                         <div class="select-selected">Вікна двері</div>
                         <div class="select-items toggle-group" id="windows">
-                            <div class="toggle">Так</div>
-                            <div class="toggle">Ні</div>
+                            <div class="toggle" data-value="yes">Так</div>
+                            <div class="toggle" data-value="no">Ні</div>
                         </div>
                     </div>
                     <div class="custom-select ">
                         <div class="select-selected">Інженерні мережі</div>
                         <div class="select-items toggle-group" id="engineer">
-                            <div class="toggle">Так</div>
-                            <div class="toggle">Ні</div>
+                            <div class="toggle" data-value="yes">Так</div>
+                            <div class="toggle" data-value="no">Ні</div>
                         </div>
                     </div>
                     <div class="custom-select ">
                         <div class="select-selected">Внутрішні роботи</div>
                         <div class="select-items toggle-group" id="interior">
-                            <div class="toggle">Так</div>
-                            <div class="toggle">Ні</div>
+                            <div class="toggle" data-value="yes">Так</div>
+                            <div class="toggle" data-value="no">Ні</div>
                         </div>
                     </div>
 
@@ -459,9 +462,11 @@
                     </ul>
                     <div class="section-inform__links">
 
-                        <a href="" class="section-inform__link"><img class="section-inform__info"
+                        <a href="https://www.instagram.com/karkas.house.ua?igsh=aTU3NXhpZmU2cDJz&utm_source=qr"
+                            class="section-inform__link"><img class="section-inform__info"
                                 src="images/icons8-instagram-30.png" alt="">instagram</a>
-                        <a href="" class="section-inform__link"><img class="section-inform__info"
+                        <a href="https://www.facebook.com/share/1AtGpzEyYe/?mibextid=wwXIfr"
+                            class="section-inform__link"><img class="section-inform__info"
                                 src="images/icons8-facebook-30.png" alt="">facebook</a>
 
                     </div>
@@ -569,10 +574,11 @@
             </div>
             <div class="footer-media">
 
-                <a href="" class="footer-media__link"><img class="footer-media__icon"
-                        src="images/icons8-instagram-30.png" alt="">instagram</a>
-                <a href="" class="footer-media__link"><img class="footer-media__icon"
-                        src="images/icons8-facebook-30.png" alt="">facebook</a>
+                <a href="https://www.instagram.com/karkas.house.ua?igsh=aTU3NXhpZmU2cDJz&utm_source=qr"
+                    class="footer-media__link"><img class="footer-media__icon" src="images/icons8-instagram-30.png"
+                        alt="">instagram</a>
+                <a href="https://www.facebook.com/share/1AtGpzEyYe/?mibextid=wwXIfr" class="footer-media__link"><img
+                        class="footer-media__icon" src="images/icons8-facebook-30.png" alt="">facebook</a>
 
             </div>
             <address class="footer__address">

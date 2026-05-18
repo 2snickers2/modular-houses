@@ -130,6 +130,10 @@ a:visited {
   color: #ffffff;
 }
 
+.header__nav-calculate-mobile {
+  display: none;
+}
+
 /* Burger */
 .burger {
   display: none;
@@ -1011,6 +1015,12 @@ a:visited {
 
   .header__logo-text {
     font-size: 16px;
+  }
+
+  .header__nav-calculate-mobile {
+    display: block;
+    margin: auto;
+    padding: 7px 50px;
   }
 
   .burger {
